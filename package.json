@@ -1,0 +1,15 @@
+{
+  "name": "token-upgrade-sample",
+  "version": "0.1.0",
+  "description": "Create a Run Token then  execute an upgrade to transfer ownership",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mike drabic",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "dotenv": "^14.2.0",
+    "run-sdk": "^0.6.35"
+  }
+}
