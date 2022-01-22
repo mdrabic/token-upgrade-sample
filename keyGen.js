@@ -1,4 +1,4 @@
-const bsv = require("bsv");
+import bsv from "bsv";
 
 const privateKey = bsv.PrivateKey.fromRandom("mainnet");
 const pubKey = bsv.PublicKey.fromPrivateKey(privateKey);
