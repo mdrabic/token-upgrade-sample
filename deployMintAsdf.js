@@ -20,7 +20,6 @@ async function deploy() {
 async function mint(amount, contractLocation) {
   run.activate();
   run.trust("*");
-  //Haste Contract
   run.trust(contractLocation.substring(0, contractLocation.length - 3)); // Contract Location without _suffix
   const contract = await run.load(contractLocation);
 
