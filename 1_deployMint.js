@@ -14,7 +14,7 @@ async function deploy() {
   run.trust("*"); //don't do this for a production token
   run.deploy(AsdfToken);
   await run.sync();
-  console.log(`deployedLocation=${AsdfToken.location}`);
+  console.log(`deployedClassLocation=${AsdfToken.location}`);
 }
 
 async function mint(amount, contractLocation) {
@@ -30,8 +30,8 @@ async function mint(amount, contractLocation) {
   console.log(mintedCoin.location);
 }
 
-// run only deploy() then run only mint()
-// deploy().catch((e) => console.log(e));
+// first deploy(), then optionally mint()
+deploy().catch((e) => console.log(e));
 //mint(42000, "8f831ee3bbf454f96d38d7e0e7571db58570af722b64363fced579349cb1d647_o1").catch((e) => console.log(e));
 
 
